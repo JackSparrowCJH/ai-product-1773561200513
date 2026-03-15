@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="title">功德排行榜</view>
+  <view class="list">
+    <view class="row" wx:for="{{list}}" wx:key="openid">
+      <text class="rank-num">{{index + 1}}</text>
+      <text class="name">{{item.nickname || '无名施主'}}</text>
+      <text class="merit">{{item.merit}}</text>
+    </view>
+    <view wx:if="{{list.length === 0}}" class="empty">暂无数据</view>
+  </view>
+</view>
