@@ -1,0 +1,7 @@
+.container { padding: 40rpx; }
+.title { font-size: 44rpx; text-align: center; color: #f0c040; margin-bottom: 40rpx; }
+.row { display: flex; align-items: center; padding: 20rpx 0; border-bottom: 1rpx solid #333; }
+.rank-num { width: 60rpx; font-size: 36rpx; color: #f0c040; }
+.name { flex: 1; font-size: 30rpx; }
+.merit { font-size: 30rpx; color: #f0c040; }
+.empty { text-align: center; color: #666; margin-top: 100rpx; }
