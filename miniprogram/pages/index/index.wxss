@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.merit-display {
+  font-size: 48rpx;
+  margin-bottom: 40rpx;
+  color: #f0c040;
+}
+.combo-display {
+  font-size: 36rpx;
+  color: #ff6b6b;
+  margin-bottom: 20rpx;
+}
+.fish-wrapper {
+  width: 400rpx;
+  height: 400rpx;
+}
+.fish {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.08s;
+}
+.fish-tap {
+  transform: scale(0.9);
+}
+.float-text {
+  position: absolute;
+  font-size: 32rpx;
+  color: #f0c040;
+  animation: floatUp 0.8s ease-out forwards;
+  pointer-events: none;
+}
+@keyframes floatUp {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-120rpx); }
+}
+.bottom-bar {
+  position: fixed;
+  bottom: 60rpx;
+  display: flex;
+  gap: 40rpx;
+}
+.btn {
+  padding: 16rpx 48rpx;
+  background: #f0c040;
+  color: #1a1a2e;
+  border-radius: 40rpx;
+  font-size: 28rpx;
+}
